@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import aiohttp
 import pickle
-from code import predictcar
+from app.code import predictcar
 import os
 app = FastAPI()
 
