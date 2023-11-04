@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import aiohttp
 import pickle
-from app.code import predictcar
+from code import predictcar
 import os
 app = FastAPI()
 
@@ -22,7 +22,7 @@ HOG_API_URL_DEFAULT = 'http://localhost:8080/api/gethog'
 HOG_API_URL_ALTERNATE = 'http://172.17.0.2:80/api/gethog'
 HEADERS = {"Content-Type": "application/json"}
 
-m = pickle.load(open(os.getcwd()+r'/model/image_modelv3.pk', 'rb'))
+m = pickle.load(open(os.getcwd()+r'D:/Repositories/CarBrandClass/model/image_modelv3.pk', 'rb'))
 
 # pwd == work
 
